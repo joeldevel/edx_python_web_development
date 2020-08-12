@@ -1,0 +1,15 @@
+/* general colors */
+:root {
+   --blue: #4386fb;
+   --light-grey: #f4f4f4;
+}
+/*    LAYOUT
+=============================================  */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.google-logo {
+  width: 300px;
+}
