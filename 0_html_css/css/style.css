@@ -9,7 +9,60 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container-flex {
+  display: flex;
+  flex-direction: row;
+}
+.page-container {
+  height: 100vh;
+  flex-direction: column;
+}
+.header {
+  height: 8%;
+  /* background: red; */
+  padding: 1em;
+  justify-content: flex-end;
+}
+.google-products-nav {
+  /* background: plum; */
+  align-self: center;
+
+}
+
+.main-content-container {
+  /* background: green; */
+  height: 60%;
+  flex-grow: 2;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.footer {
+  min-height: 20%;
+  background: var(--light-grey);
 }
 .google-logo {
   width: 300px;
+}
+
+/* buttons */
+
+.btn {
+  border: 1px solid transparent;
+  background-color: var(--light-grey);
+  padding: 5px 12px;
+  border-radius: 3px;
+  color:grey;
+  min-width: 100px;
+}
+.btn:hover {
+  background: grey;
+  border-color: black;
+  color:black;
+}
+.btn-login {
+  background: var(--blue);
+  color:white;
 }
