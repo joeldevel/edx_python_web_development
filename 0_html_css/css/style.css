@@ -2,6 +2,8 @@
 :root {
    --blue: #4386fb;
    --light-grey: #f4f4f4;
+   --text-grey: #8088a6;
+   --border-grey: #e4e4e4;
 }
 /*    LAYOUT
 =============================================  */
@@ -10,6 +12,9 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+}
+li {
+  list-style: none;
 }
 .container-flex {
   display: flex;
@@ -65,4 +70,56 @@ body {
 .btn-login {
   background: var(--blue);
   color:white;
+}
+/*    TOP NAV
+=============================================  */
+
+
+/*    FOOTER
+=============================================  */
+.footer {
+  flex-direction: column;
+}
+.country {
+  padding-left: 40px;
+}
+/*  Shoul rename these two, because are confusing*/
+.footer-lists-container {
+  border-top: 1px solid var(--border-grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0;
+}
+.footer-list-container {
+  /* background: orange; */
+  margin-bottom: 0;
+}
+.footer-list-left,
+.footer-list-right {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+}
+.footer-list-left {
+  /* margin: 0; */
+  padding-left: 40px;
+}
+.footer-list-right {
+
+  padding-right: 40px;
+}
+.footer-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color:var(--text-grey);
+  font-size: 14px;
+  padding: 0 10px;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+.country {
+  color:var(--text-grey);
+  font-size: 14px;
 }
