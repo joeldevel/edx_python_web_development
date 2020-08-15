@@ -3,17 +3,19 @@
   <head>
     <meta name="viewport" content="width:device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
     <title>Search</title>
   </head>
   <body>
-    <div class="container-flex page-container">
+    <div class="container-modal" id="modal-container" >
+    <div class="container-flex page-container" id="page-container">
       <header class="header container-flex">
         <div></div>
         <div class="container-flex google-products-nav">
           <ul class="flex-list">
             <li><a href="">gmail</a></li>
             <li><a href="">images</a></li>
-            <li><a href=""><img src="images/grid-grey.png" class="grid-icon"/></a></li>
+            <li><img src="images/grid-grey.png" class="grid-icon" id="grid-products"/></li>
           </ul>
           <button class="btn btn-login">login</button>
         </div>
@@ -56,5 +58,33 @@
         </div>
       </footer>
     </div>
+    <!--  The modal here-->
+    <div class="modal" id="modal">
+      <div class="image-container">
+        <img class="icon"src="images/youtube.png" alt="">
+        <p class="product-name">you tube</p>
+      </div>
+      <div class="image-container">
+        <img class="icon"src="images/gmail.png" alt="">
+        <p class="product-name">gmail</p>
+      </div>
+      <div class="image-container">
+        <img class="icon"src="images/drive.png" alt="">
+        <p class="product-name">drive</p>
+      </div>
+      <div class="image-container">
+        <img class="icon"src="images/playstore.png" alt="">
+        <p class="product-name">playstore</p>
+      </div>
+      <div class="image-container">
+        <img class="icon"src="images/google-brand.png" alt="">
+        <p class="product-name">search</p>
+      </div>
+    </div>
+    </div>
+    <!--  end modal-->
+    <script type="text/javascript" src="modal.js">
+
+    </script>
   </body>
 </html>
