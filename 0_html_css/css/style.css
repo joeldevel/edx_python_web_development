@@ -4,6 +4,7 @@
    --light-grey: #f4f4f4;
    --text-grey: #8088a6;
    --border-grey: #e4e4e4;
+   --text-dark-grey: #273f4f;
 }
 /*    LAYOUT
 =============================================  */
@@ -15,6 +16,17 @@ body {
 }
 li {
   list-style: none;
+}
+a {
+  color: var(--text-dark-grey);
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: var(--text-grey);
 }
 .container-flex {
   display: flex;
@@ -29,6 +41,8 @@ li {
   /* background: red; */
   padding: 1em;
   justify-content: flex-end;
+  align-items:baseline;
+  padding: 10px 40px 40px 0;
 }
 .google-products-nav {
   /* background: plum; */
@@ -43,6 +57,7 @@ li {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding-top: 50px;
 }
 .footer {
   min-height: 20%;
@@ -70,11 +85,31 @@ li {
 .btn-login {
   background: var(--blue);
   color:white;
+  font-weight: bold;
 }
+
 /*    TOP NAV
 =============================================  */
-
-
+.google-products-nav {
+  font-size: 12px;
+  font-weight: normal;
+  /* background: #ab342f; */
+}
+.flex-list {
+  margin: 9px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.flex-list> li {
+  text-transform: capitalize;
+  margin: 0 10px;
+}
+.btn-login:hover {
+  color: white;
+  border: 1px solid transparent;
+  background: var(--blue);
+  box-shadow: 1px 1px 1px rgba(0,0,0, 0.2);
+}
 /*    FOOTER
 =============================================  */
 .footer {
