@@ -1,0 +1,19 @@
+{
+  "name": "0_html_css",
+  "version": "1.0.0",
+  "description": "Project 0 of Harvard CS50's Web Programming programme",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "joeldevel",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
